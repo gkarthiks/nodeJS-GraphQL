@@ -1,0 +1,18 @@
+extends: airbnb-base
+rules:
+  no-await-in-loop: off
+  no-dupe-keys: 2
+  no-dupe-args: 2
+  no-debugger: 2
+  no-console: 0
+  no-shadow: 2
+  quotes: [2, single]
+  no-multi-spaces: 0
+  new-cap: 0
+  key-spacing: 0
+  dot-notation: 1
+  no-underscore-dangle: 0
+  no-unused-vars: 0
+env:
+  browser: true
+  node: true

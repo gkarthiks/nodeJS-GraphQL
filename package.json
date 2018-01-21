@@ -1,0 +1,38 @@
+{
+  "name": "graphqlexample",
+  "version": "1.0.0",
+  "description": "A sinple GraphQL application with nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkarthiks/nodeJS-GraphQL.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "nodeJS-GraphQL"
+  ],
+  "author": "Karthikeyan Govindaraj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gkarthiks/nodeJS-GraphQL/issues"
+  },
+  "homepage": "https://github.com/gkarthiks/nodeJS-GraphQL#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.12.3",
+    "graphql-tools": "^2.6.1",
+    "lodash": "^4.17.4"
+  }
+}
