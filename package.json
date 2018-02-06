@@ -4,7 +4,9 @@
   "description": "A sinple GraphQL application with nodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --presets babel-preset-env --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node dist/index.js"
   },
   "repository": {
     "type": "git",
