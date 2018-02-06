@@ -35,21 +35,25 @@ Noe create a `docker image` by executing the below command.
 
 >
 ```
-docker build graphqlexample .
+docker build -t graphqlexample .
 ```
 
 This will create a docker image with `node:slim` as base. Check whether the image is created or not by listing the docker images via below command.
 
 > docker image ls
 
-Tag the docker image with the following command.
+Tag the docker image with the following command and push it to your docker hub.
 
-> docker tag graphqlexample <username>/<repository>
+>
+```
+docker tag graphqlexample <username>/graphqlexample
+docker push <username>/graphqlexample
+```
   
 Find quick docker commands [here](https://github.com/gkarthiks/quick-commands-cheat-sheet).
 
 Now that docker image is created, that can be tested with docker itself by runing it locally with the below command.
 
-> docker run -p 4000:4000 <username>/<repositoryname>
+> docker run -p 4000:4000 <username>/graphqlexample
   
 Once after successfull testing, it can be deployed in the `minikube` by creating the `Deployment`, `Service` and `Route` objects.
